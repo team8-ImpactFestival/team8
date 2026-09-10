@@ -14,6 +14,7 @@ main {
   height: 100%;
   object-fit: cover;
   display: block;
+  opacity: 0.8;
 }
 
 .hero::after {
@@ -27,10 +28,16 @@ main {
   position: absolute;
   z-index: 1;
   top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #038bc4;
   max-width: 650px;
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-text h1 {
@@ -40,6 +47,24 @@ main {
 
 .hero-text p {
   font-size: 1.3rem;
+}
+h1,
+.undertekst {
+  font-family: oswald, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 800px;
+  line-height: 30px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: medium;
 }
 
 .grid {

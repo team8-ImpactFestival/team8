@@ -1,48 +1,52 @@
 ---
-import "../styles/layout.css"
+import "../styles/layout.css";
 ---
 
 <!doctype html>
 <html lang="da">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <title>Impact Festival</title>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Impact Festival</title>
+  </head>
 
-    <body>
-        <header>
-	<nav class="navbar">
-    <a href="/" class="logo">
-        <img src="/images/logo.svg" alt="Impact Festival logo" />
-    </a>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="/" class="logo">
+          <img src="/src/img/impactlogo.webp" alt="Impact Festival logo" />
+        </a>
 
-    <div class="nav-right">
-        <a href="/about">ABOUT</a>
-        <a href="/program">PROGRAM</a>
-        <a href="/tickets">TICKETS</a>
-        <a href="/newsletter">NEWSLETTER</a>
+        <div class="nav-right">
+          <a href="/about">ABOUT</a>
+          <a href="/program">PROGRAM</a>
+          <a href="/tickets">TICKETS</a>
+          <a href="/newsletter">NEWSLETTER</a>
 
-        <div class="socials">
+          <div class="socials">
             <a href="#" aria-label="Instagram">
-                <img src="" alt="" />
+              <img src="/src/img/insta.jpg" alt="" />
             </a>
 
             <a href="#" aria-label="LinkedIn">
-                <img src="" alt="" />
+              <img src="/src/img/linkedIn.avif" alt="" />
             </a>
 
             <a href="#" aria-label="Facebook">
-                <img src="" alt="" />
+              <img src="/src/img/fb.png" alt="" />
             </a>
+          </div>
         </div>
-    </div>
-</nav>
+      </nav>
+    </header>
 
-        </header>
-
-        <main>
-            <slot />
-        </main>
-    </body>
+    <main>
+      <slot />
+      <style>
+        main {
+          padding: 2rem;
+        }
+      </style>
+    </main>
+  </body>
 </html>
