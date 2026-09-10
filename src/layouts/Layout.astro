@@ -1,23 +1,48 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import "../styles/layout.css"
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!doctype html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Impact Festival</title>
+    </head>
+
+    <body>
+        <header>
+	<nav class="navbar">
+    <a href="/" class="logo">
+        <img src="/images/logo.svg" alt="Impact Festival logo" />
+    </a>
+
+    <div class="nav-right">
+        <a href="/about">ABOUT</a>
+        <a href="/program">PROGRAM</a>
+        <a href="/tickets">TICKETS</a>
+        <a href="/newsletter">NEWSLETTER</a>
+
+        <div class="socials">
+            <a href="#" aria-label="Instagram">
+                <img src="" alt="" />
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <img src="" alt="" />
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <img src="" alt="" />
+            </a>
+        </div>
+    </div>
+</nav>
+
+        </header>
+
+        <main>
+            <slot />
+        </main>
+    </body>
+</html>
