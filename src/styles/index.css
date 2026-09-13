@@ -70,9 +70,11 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   border-radius: 25px;
+  font-family: "antonio", sans-serif;
+  font-weight: 800;
 }
 
 .button:hover {
@@ -111,14 +113,14 @@
   letter-spacing: 0.5px;
 }
 .info-card p {
-  font-family: Arial, sans-serif;
+  font-family: "antonio", sans-serif;
   font-size: 13px;
   line-height: 1.55;
 }
 
 .read-more {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "antonio", sans-serif;
   font-size: 14px;
   margin-top: 30px;
 }
